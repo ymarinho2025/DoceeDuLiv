@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Docee DuLiv</title>
+  <meta name="description" content="Doces artesanais feitos com amor e dedicação." />
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <h1 class="brand">Docee DuLiv</h1>
+
+        <nav class="nav-desktop" aria-label="Navegação principal">
+          <button type="button" data-scroll="home">Início</button>
+          <button type="button" data-scroll="products">Produtos</button>
+          <button type="button" data-scroll="about">Sobre Nós</button>
+          <button type="button" data-scroll="contact">Contato</button>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-btn>
+          <span data-menu-icon="open"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></span>
+          <span data-menu-icon="close" class="is-hidden"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" aria-label="Navegação mobile" data-mobile-nav>
+        <button type="button" data-scroll="home">Início</button>
+        <button type="button" data-scroll="products">Produtos</button>
+        <button type="button" data-scroll="about">Sobre Nós</button>
+        <button type="button" data-scroll="contact">Contato</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1600&q=80"
+             src="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXN0cnklMjBzaG9wJTIwYmFrZXJ5JTIwc3dlZXRzJTIwZGlzcGxheXxlbnwxfHx8fDE3NzEyNDU2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+             alt="Doceria Docee DuLiv">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1>
+          Bem-vindo à <span class="brand-inline">Docee DuLiv</span>
+        </h1>
+        <p>Doces artesanais feitos com amor e dedicação</p>
+        <button class="cta" type="button" data-scroll="contact">Faça seu Pedido</button>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section products">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:4rem;">
+          <h2 class="section-title">Nossos Produtos</h2>
+          <p class="section-subtitle">Conheça nossa seleção de doces artesanais</p>
+        </div>
+
+        <div class="grid cols-3">
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1769433509476-bd68b1229916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjB0cnVmZmxlcyUyMGdvdXJtZXR8ZW58MXx8fHwxNzcxMjQ1NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Trufas Gourmet">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Trufas Gourmet</h3>
+              <p class="card-desc">Trufas artesanais de chocolate belga em diversos sabores</p>
+            </div>
+          </article>
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1764262184440-6940715c8bc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMG1hY2Fyb25zJTIwcGFzdHJ5fGVufDF8fHx8MTc3MTI0NTY3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Macarons">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Macarons</h3>
+              <p class="card-desc">Delicados macarons franceses com recheios especiais</p>
+            </div>
+          </article>
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1768341857441-9084cfd8676e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWtlJTIwc2xpY2UlMjBkZXNzZXJ0JTIwZWxlZ2FudHxlbnwxfHx8fDE3NzEyNDU2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Bolos Personalizados">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bolos Personalizados</h3>
+              <p class="card-desc">Bolos sob encomenda para todas as ocasiões especiais</p>
+            </div>
+          </article>
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1610851467843-fe4a65aea9c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXBjYWtlJTIwZnJvc3RpbmclMjBkZWNvcmF0ZWR8ZW58MXx8fHwxNzcxMjQ1Njc2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Cupcakes">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cupcakes</h3>
+              <p class="card-desc">Cupcakes decorados com cobertura cremosa e deliciosa</p>
+            </div>
+          </article>
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1582493255270-b3844e2a63c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjB0cnVmZmxlJTIwZGVzc2VydHxlbnwxfHx8fDE3NzEyNDU2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Docinhos Finos">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Docinhos Finos</h3>
+              <p class="card-desc">Brigadeiros, beijinhos e docinhos gourmet para festas</p>
+            </div>
+          </article>
+
+          <article class="card" data-ui="card">
+            <div class="card-media">
+              <img data-fallback="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?auto=format&fit=crop&w=1200&q=80"
+                   src="https://images.unsplash.com/photo-1516918977792-f0f8948aa15a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXN0cnklMjBzaG9wJTIwYmFrZXJ5JTIwc3dlZXRzJTIwZGlzcGxheXxlbnwxfHx8fDE3NzEyNDU2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Tortas & Pavês">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Tortas & Pavês</h3>
+              <p class="card-desc">Tortas e pavês cremosos com sabores irresistíveis</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:4rem;">
+          <h2 class="section-title">Sobre a Docee DuLiv</h2>
+          <p class="section-subtitle" style="max-width:48rem;margin-left:auto;margin-right:auto;">
+            Nossa história é feita de amor, dedicação e muito sabor. Há mais de 10 anos,
+            transformamos momentos especiais em memórias doces e inesquecíveis.
+          </p>
+        </div>
+
+        <div class="grid cols-3 features">
+          <div class="feature">
+            <div class="icon-pill" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>Feito com Amor</h3>
+            <p>Cada doce é preparado com ingredientes selecionados e muito carinho</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon-pill" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <h3>Qualidade Premium</h3>
+            <p>Utilizamos apenas ingredientes de primeira qualidade em nossas receitas</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon-pill" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Atendimento Especial</h3>
+            <p>Personalizamos cada pedido para tornar sua festa única e memorável</p>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div style="max-width:48rem;margin:0 auto;text-align:center;">
+            <p style="font-size:1.05rem;color:var(--gray-700);line-height:1.7;margin:0 0 1.25rem;">
+              Na <span style="color:var(--pink-600);font-family:var(--font-serif);">Docee DuLiv</span>, acreditamos que cada celebração
+              merece doces especiais. Nossa equipe trabalha com dedicação para criar produtos
+              artesanais que combinam tradição e inovação, sempre priorizando o sabor e a
+              apresentação impecável.
+            </p>
+            <p style="font-size:1.05rem;color:var(--gray-700);line-height:1.7;margin:0;">
+              Seja para festas, casamentos, eventos corporativos ou simplesmente para adoçar
+              o seu dia, estamos prontos para criar experiências doces inesquecíveis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:4rem;">
+          <h2 class="section-title">Entre em Contato</h2>
+          <p class="section-subtitle">Estamos prontos para adoçar seus momentos especiais</p>
+        </div>
+
+        <div class="contact-grid">
+          <div style="display:flex;flex-direction:column;gap:2rem;">
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <h3>Telefone</h3>
+                <p>(11) 98765-4321</p>
+                <p>(11) 3456-7890</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div>
+              <div>
+                <h3>E-mail</h3>
+                <p>contato@doceedliv.com.br</p>
+                <p>pedidos@doceedliv.com.br</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <h3>Endereço</h3>
+                <p>Rua dos Doces, 123</p>
+                <p>Jardim Delícias - São Paulo, SP</p>
+                <p>CEP: 01234-567</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 9h às 19h</p>
+                <p>Sábado: 9h às 15h</p>
+                <p>Domingo: Fechado</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Faça seu Pedido</h3>
+
+            <form id="orderForm" novalidate>
+              <div class="field" style="margin-bottom:1rem;">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" placeholder="Seu nome completo" autocomplete="name" required>
+              </div>
+
+              <div class="field" style="margin-bottom:1rem;">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required>
+              </div>
+
+              <div class="field" style="margin-bottom:1rem;">
+                <label for="phone">Telefone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(11) 98765-4321" autocomplete="tel" required>
+              </div>
+
+              <div class="field" style="margin-bottom:1.25rem;">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre seu pedido..." required></textarea>
+              </div>
+
+              <button class="form-submit" type="submit">Enviar Mensagem</button>
+            </form>
+
+            <div class="social">
+              <h4>Siga-nos nas Redes Sociais</h4>
+              <div class="social-links">
+                <a class="social-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+                <a class="social-btn" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <h3 class="footer-title">Docee DuLiv</h3>
+      <p class="footer-desc">Doces artesanais feitos com amor e dedicação</p>
+      <p class="footer-copy">© <span data-year></span> Docee DuLiv. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Toast region -->
+  <div class="toast-region" aria-live="polite" aria-relevant="additions" aria-atomic="false" id="toastRegion"></div>
+
+  <script src="./js/ui.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+:root{
+  --font-size:16px;
+  --bg:#ffffff;
+  --fg:#111827;
+  --muted:#6b7280;
+  --muted-2:#9ca3af;
+  --pink-50:#fdf2f8;
+  --pink-100:#fce7f3;
+  --pink-300:#f9a8d4;
+  --pink-600:#db2777;
+  --pink-700:#be185d;
+  --gray-50:#f9fafb;
+  --gray-100:#f3f4f6;
+  --gray-300:#d1d5db;
+  --gray-400:#9ca3af;
+  --gray-700:#374151;
+  --gray-900:#111827;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.06);
+  --shadow-lg:0 10px 25px rgba(0,0,0,.12);
+  --radius:14px;
+  --radius-lg:18px;
+  --container:80rem;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+*{ box-sizing:border-box; }
+html{ font-size:var(--font-size); scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  color:var(--fg);
+  background:var(--bg);
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; }
+button, input, textarea{
+  font:inherit;
+}
