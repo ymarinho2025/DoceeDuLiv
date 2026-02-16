@@ -1,6 +1,4 @@
-/**
- * ui.js
- * Pequenas utilidades de UI em JavaScript puro (sem dependências).
+/* Pequenas utilidades de UI em JavaScript puro (sem dependências).
  * Inclui: Toast, fallback de imagem, helpers de classe/seletores.
  */
 (function () {

@@ -1,6 +1,6 @@
 /**
  * app.js
- * Lógica específica do site (menu mobile, scroll suave, form).
+ * Lógica específica do site (menu mobile, scroll suave, form -> WhatsApp).
  */
 (function () {
   "use strict";
@@ -80,38 +80,83 @@
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email || "").trim());
   }
 
+  /**
+   * setupForm
+   * Integra a lógica do formulário para enviar mensagem via WhatsApp (wa.me).
+   */
   function setupForm() {
     var form = document.getElementById("orderForm");
-    if (!form) return;
+    var btn = document.querySelector("#submitbtn");
+    var resultado = document.querySelector("#resultado");
 
-    form.addEventListener("submit", function (ev) {
-      ev.preventDefault();
+    // Se não existir o formulário e nem o botão, não faz nada.
+    if (!form && !btn) return;
 
-      var name = form.querySelector("#name");
-      var email = form.querySelector("#email");
-      var phone = form.querySelector("#phone");
-      var message = form.querySelector("#message");
+    // Número da empresa (WhatsApp)
+    var telefoneEmpresa = "5511934994424";
 
-      var n = name ? name.value.trim() : "";
-      var e = email ? email.value.trim() : "";
-      var p = phone ? phone.value.trim() : "";
-      var m = message ? message.value.trim() : "";
+    // Função central de envio (reutilizável)
+    function handleSend(ev) {
+      if (ev) ev.preventDefault();
 
-      // Validação simples
-      if (!n) return UI.toast({ title: "Preencha seu nome", description: "Informe seu nome completo para continuar." });
-      if (!e || !validateEmail(e)) return UI.toast({ title: "E-mail inválido", description: "Informe um e-mail válido para contato." });
-      if (!p) return UI.toast({ title: "Telefone obrigatório", description: "Informe um telefone/WhatsApp para retorno." });
-      if (!m) return UI.toast({ title: "Mensagem obrigatória", description: "Descreva o que você deseja encomendar." });
+      // Preferir capturar do form (se existir), senão do document
+      var scope = form || document;
 
-      // Simulação de envio
-      UI.toast({
-        title: "Mensagem enviada!",
-        description: "Recebemos seu pedido e entraremos em contato em breve.",
-        duration: 4200
+      var nomeEl = scope.querySelector("#name");
+      var emailEl = scope.querySelector("#email");
+      var phoneEl = scope.querySelector("#phone");
+      var msgEl = scope.querySelector("#message");
+
+      var nome = nomeEl ? nomeEl.value.trim() : "";
+      var email = emailEl ? emailEl.value.trim() : "";
+      var telefoneCliente = phoneEl ? phoneEl.value.trim() : "";
+      var mensagemCliente = msgEl ? msgEl.value.trim() : "";
+
+      // Validações
+      if (!nome || !email || !telefoneCliente || !mensagemCliente) {
+        alert("Preencha todos os campos obrigatórios.");
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        alert("Informe um e-mail válido.");
+        return;
+      }
+
+      console.table({
+        nome: nome,
+        email: email,
+        telefoneCliente: telefoneCliente,
+        mensagemCliente: mensagemCliente
       });
 
-      form.reset();
-    });
+      if (resultado) {
+        resultado.textContent = "Olá " + nome + ", sua mensagem está sendo enviada para o WhatsApp!";
+      }
+
+      var mensagem =
+        "Olá, tudo bem?\n\n" +
+        "Meu nome é: " + nome + "\n" +
+        "E-mail: " + email + "\n" +
+        "Telefone: " + telefoneCliente + "\n\n" +
+        "Mensagem:\n" + mensagemCliente + "\n\n" +
+        "Gostaria de mais informações!";
+
+      var url = "https://wa.me/" + telefoneEmpresa + "?text=" + encodeURIComponent(mensagem);
+
+      // Redireciona para o WhatsApp
+      window.location.href = url;
+    }
+
+    // Submit do formulário (Enter ou botão tipo submit)
+    if (form) {
+      form.addEventListener("submit", handleSend);
+    }
+
+    // Clique no botão específico (caso o botão não seja submit)
+    if (btn) {
+      btn.addEventListener("click", handleSend);
+    }
   }
 
   document.addEventListener("DOMContentLoaded", function () {

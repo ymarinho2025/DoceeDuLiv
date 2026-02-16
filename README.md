@@ -1,6 +1,7 @@
 # DoceeDuLiv
 
-Docee DuLiv — Versão HTML/CSS/JS (sem React)
+Docee DuLiv — HTML/CSS/JS
+WebSite criado para trabalho escolar.
 
 Estrutura:
 - index.html
